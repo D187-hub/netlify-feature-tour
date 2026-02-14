@@ -20,9 +20,15 @@ import Layout from '../components/layout.astro';
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 850px) {
   .steps {
-    grid-template-columns: repeat(4, min(calc(25% - 1.5rem), 250px));
+    grid-template-columns: repeat(3, min(calc(33.333% - 1.33rem), 250px));
+  }
+}
+
+@media (min-width: 1300px) {
+  .steps {
+    grid-template-columns: repeat(5, min(calc(20% - 1.6rem), 250px));
   }
 }
 
@@ -102,6 +108,19 @@ import Layout from '../components/layout.astro';
       </p>
       <a href="/netlify-forms" class="button">
         Learn more <span class="sr-only">about Netlify Forms</span>
+      </a>
+    </section>
+
+    <section class="step">
+      <h2 class="stepHeading">Netlify Projects</h2>
+      <p>
+        Organize your sites, manage environments, and collaborate with your team.
+        <strong>
+          Everything you need to manage your web projects from one unified dashboard.
+        </strong>
+      </p>
+      <a href="/projects" class="button">
+        Learn more <span class="sr-only">about Netlify Projects</span>
       </a>
     </section>
   </main>
